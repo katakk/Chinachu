@@ -1,7 +1,7 @@
 {
   "name": "chinachu",
-  "description": "A open source EPG digital video recorder system for Linux.",
-  "version": "0.0.1",
+  "description": "Most Lovely DVR Software in Japan.",
+  "version": "0.9.5-gamma.0",
   "private": true,
   "homepage": "https://chinachu.moe/",
   "author": {
@@ -23,18 +23,24 @@
     "url": "https://github.com/kanreisa/Chinachu/issues"
   },
   "dependencies": {
+    "chinachu-upnp-server": "^0.0.2",
     "dateformat": "~1.0.6-1.2.3",
+    "diskusage": "^0.1.5",
     "easy-table": "~0.2.0",
-    "http-auth": "~1.2.9",
-    "opts": "~1.2.2",
-    "socket.io": "~0.9.16",
-    "xml2js": "~0.2.8",
-    "mkdirp": "~0.3.5",
-    "spdy": "~1.14.15",
-    "string": "~1.5.1",
-    "mtwitter": "~1.5.2",
+    "geoip-lite": "^1.1.6",
     "hoard": "~0.1.5",
-    "execsync": "0.0.5"
+    "http-auth": "^2.2.8",
+    "mdns-js": "^0.5.0",
+    "mirakurun": "^2.0.0-rc.5",
+    "mkdirp": "~0.3.5",
+    "mtwitter": "~1.5.2",
+    "nodemailer": "^2.7.0",
+    "nodemailer-sendmail-transport": "^1.0.0",
+    "opts": "~1.2.2",
+    "socket.io": "^1.7.2",
+    "string": "~1.5.1",
+    "swagger-client": "github:kanreisa/swagger-js#feature/unix-domain-socket",
+    "xml2js": "~0.2.8"
   },
   "devDependencies": {
     "mocha": "*",
@@ -45,6 +51,6 @@
     "test": "mocha -R spec"
   },
   "engines": {
-    "node": ">=0.10.13"
+    "node": ">=6.9.0"
   }
 }
