@@ -23,9 +23,10 @@ before_install:
 
 before_script:
   - "echo 1 | ./chinachu installer"
+  - npm run ci
 
 notifications:
   email: false
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+- npm run codecov
